@@ -1,0 +1,5 @@
+https://liveexample.pearsoncmg.com/liang/animation/web/BubbleSort.html
+https://liveexample.pearsoncmg.com/liang/animation/web/MergeList.html
+https://www.youtube.com/watch?v=5Z9dn2WTg9o  # merge sort
+https://www.youtube.com/watch?v=xli_FI7CuzA #bubble sort
+https://www.youtube.com/watch?v=Cq7SMsQBEUw

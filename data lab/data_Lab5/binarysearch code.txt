@@ -1,0 +1,47 @@
+// Binary Search in C with Sorted Array
+#include <stdio.h>
+#include <stdlib.h>
+
+// Function to print an array
+void printArray(int arr[], int size)
+{
+    int i;
+    for (i = 0; i < size; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+}
+
+int binarySearch(int arr[], int data, int low, int high) {
+  // Repeat until the pointers low and high meet each other
+  while (low <= high) {
+    int mid = low + (high - low) / 2;
+
+    if (arr[mid] == data)
+      return mid;
+
+    if (arr[mid] < data)
+      low = mid + 1;
+
+    else
+      high = mid - 1;
+  }
+
+  return -1;
+}
+
+int main(void) {
+  int arr[] = {1,2,4,5,6, 7,9, 10, 15, 23};
+  int arr_size = sizeof(arr) / sizeof(arr[0]);
+  printf("Given array is \n");
+  printArray(arr, arr_size);
+    
+  int data;
+  printf("\nPlease enter the element to search for:");
+  scanf("%d", &data);
+  int result = binarySearch(arr, data, 0, arr_size - 1);
+  if (result == -1)
+    printf("Not found");
+  else
+    printf("Element is found at index %d", result);
+  return 0;
+}
